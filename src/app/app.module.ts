@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './Component/nav-menu/nav-menu.component';
-import { LoginComponent } from './Component/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -26,8 +24,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './Component/home/home.component';
 import { PhysicianComponent } from './Component/physician/physician.component';
+import { HomeComponent } from './Component/home/home/home.component';
+import { NavMenuComponent } from './Component/home/nav-menu/nav-menu.component';
+import { LoginComponent } from './Component/home/login/login.component';
 
 @NgModule({
   declarations: [

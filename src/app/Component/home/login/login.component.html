@@ -1,0 +1,33 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+      <div>
+          <img src="~\Login\Login\src\app\login\MicrosoftTeams-image (1).png">
+      </div>
+      <div class="row d-flex justify-content-center align-items-center h-100">
+         
+          <div class="col-md-8 col-lg-6 col-xl-6">
+              <img class="w-75"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvFcQ7_ae2_tLfUIHm0FBZnKWg0PARCDpr-g&usqp=CAU">
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+              <p>Please login to continue</p>
+              <mat-form-field class="full-width-input">
+                <input matInput placeholder="User" type="text" formControlName="userName" required>
+                <!-- <mat-error *ngIf="isFieldInvalid('userName')">
+                  Please inform your user name
+                </mat-error> -->
+              </mat-form-field>
+              <mat-form-field class="full-width-input">
+                <input matInput type="password" placeholder="Password" formControlName="password" required>
+                <!-- <mat-error *ngIf="isFieldInvalid('userName')">
+                  Please inform your password
+                </mat-error> -->
+              </mat-form-field>
+              <button mat-raised-button color="primary" type="submit">Login</button>
+            </form>
+          </div>
+      </div>
+  </div>
+ 
+</section>
